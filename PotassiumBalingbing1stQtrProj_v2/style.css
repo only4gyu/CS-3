@@ -103,8 +103,7 @@ body {
 #title {
 	font-size: 40;
 	color: #FFE487;
-	margin-left: 350px;
-	margin-right: 350px;
+	text-align: center;
 	margin-bottom: 50px;
 	padding-top: 30px;
 }
