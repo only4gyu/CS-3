@@ -15,8 +15,8 @@ body {
 #nav {
 	clear: both;
 	float: left;
-	padding-top: 5px;
-	padding-right: 5px;
+	margin-top: 10px;
+	padding-right: 10px;
 }
 
 #header {
