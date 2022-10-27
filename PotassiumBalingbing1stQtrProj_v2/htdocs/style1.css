@@ -86,6 +86,10 @@ body {
 	border-radius: 30px;
 }
 
+#cancel {
+	bottom-margin: 30px;
+}
+
 .sidenav {
 	height: 100%;
 	width: 0;
