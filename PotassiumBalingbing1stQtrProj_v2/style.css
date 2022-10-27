@@ -4,10 +4,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
-}
-
-@font-face {
-	font-family: Anja; src: url('Anja.ttf');
+	font-family: Nunito;
 } 
 
 .logo {
