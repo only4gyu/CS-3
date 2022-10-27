@@ -33,7 +33,7 @@ body {
 #content p {
 	margin-left: 260px;
 	margin-right: 260px;
-	margin-bottom:0;
+	margin-bottom:5px;
 	margin-top: 0;
 	font-size: 25px;
 	color: #004AAD;
@@ -65,22 +65,22 @@ body {
 
 #what {
 	padding-bottom: 25px;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 #history {
 	padding-bottom: 25px;
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 #people {
 	padding-bottom: 25px;
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 #more {
 	padding-bottom: 25px;
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 .sidenav {
