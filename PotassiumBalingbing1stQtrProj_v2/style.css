@@ -20,8 +20,6 @@ body {
 #header {
 	background-color:#004AAD;
 	padding: 10px;
-	padding-bottom: 20px;
-	padding-top: 20px;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
