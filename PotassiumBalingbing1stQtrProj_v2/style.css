@@ -112,7 +112,17 @@ body {
 	padding-top: 60px;
 }
 
+#Kulture {
+	transition: transform 0.5s;
+	transition-timing-function: ease;
+	padding-top: 50px;
+}
 
+#Kulture:hover {
+	transform: scale(1.1);
+	filter: drop-shadow(0px 0px 35px #FBFFAD);
+	cursor: pointer;
+}
 
 .sidenav {
 	height: 100%;
