@@ -8,9 +8,14 @@ body {
 } 
 
 .logo {
-	float:left;
+	float: left;
 	margin-right: 10px;
 	margin-left: 10px;
+}
+
+#nav {
+	clear: both;
+	float: left;
 }
 
 #header {
