@@ -11,6 +11,7 @@ body {
 	float:left;
 	margin-right: 10px;
 	margin-left: 10px;
+	padding-left: 5px;
 }
 
 #header {
@@ -132,6 +133,10 @@ body {
 	transform: scale(1.1);
 	filter: drop-shadow(0px 0px 35px #FBFFAD);
 	cursor: pointer;
+}
+
+#nav {
+	padding-top: 5px;
 }
 
 .sidenav {
