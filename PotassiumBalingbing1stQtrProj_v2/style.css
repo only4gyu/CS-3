@@ -11,7 +11,7 @@ body {
 	float:left;
 	margin-right: 10px;
 	margin-left: 10px;
-	padding-left: 5px;
+	padding-left: 15px;
 }
 
 #header {
@@ -136,7 +136,7 @@ body {
 }
 
 #nav {
-	padding-top: 5px;
+	padding-top: 25px;
 }
 
 .sidenav {
