@@ -115,7 +115,7 @@ body {
 #Kulture {
 	transition: transform 0.5s;
 	transition-timing-function: ease;
-	padding-top: 50px;
+	padding-top: 200px;
 }
 
 #Kulture:hover {
