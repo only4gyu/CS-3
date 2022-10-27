@@ -64,7 +64,7 @@ body {
 
 #what {
 	padding-bottom: 25px;
-	padding-top: 25px;
+	padding-top: 50px;
 }
 
 #history {
@@ -84,10 +84,6 @@ body {
 
 #photo {
 	border-radius: 30px;
-}
-
-#cancel {
-	padding-bottom: 30px;
 }
 
 .sidenav {
