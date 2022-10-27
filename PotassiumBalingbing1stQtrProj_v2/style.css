@@ -9,13 +9,14 @@ body {
 
 .logo {
 	float: left;
-	margin-right: 20px;
+	margin-right: 25px;
 }
 
 #nav {
 	clear: both;
 	float: left;
 	margin-top: 15px;
+	margin-left: 15px;
 	padding-right: 15px;
 }
 
