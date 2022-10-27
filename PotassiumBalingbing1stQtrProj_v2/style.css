@@ -25,6 +25,10 @@ body {
 	color: #FFDC3B;
 }
 
+#nav {
+	z-index: 2;
+	padding-top: 10px;
+}
 
 #desc p {
 	margin-left: 260px;
@@ -138,7 +142,8 @@ body {
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 2;
+	z-index: 3
+		;
 	top: 0;
 	left: 0;
 	background-color: #004AAD;
