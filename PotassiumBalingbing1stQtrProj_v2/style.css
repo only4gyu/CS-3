@@ -6,6 +6,10 @@ body {
 	background-attachment: fixed;
 }
 
+@font-face {
+	font-family: Anja; src: url('Delicious-Roman.ttf');
+} 
+
 .logo {
 	float:left;
 	margin-right: 10px;
