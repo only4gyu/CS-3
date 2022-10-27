@@ -11,7 +11,7 @@ body {
 	float:left;
 	margin-right: 10px;
 	margin-left: 10px;
-	padding-left: 15px;
+	padding-left: 20px;
 }
 
 #header {
@@ -96,10 +96,6 @@ body {
 
 #dot{
 	opacity: 0;
-}
-
-#nav {
-	margin-top: 25px;
 }
 
 #nav:hover {
