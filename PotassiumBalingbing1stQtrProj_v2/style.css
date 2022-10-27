@@ -146,7 +146,6 @@ body {
 	cursor: pointer;
 }
 
-
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -170,6 +169,7 @@ body {
 }
 
 .sidenav h2 {
+	float: left;
 	padding: 0px 8px 8px 15px;
 	margin-top: 0;
 	text-decoration: none;
