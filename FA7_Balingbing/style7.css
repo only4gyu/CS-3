@@ -1,0 +1,57 @@
+h1{
+			background-color: lightblue;
+			padding: 20px;
+			text-align: center;
+			font-size: 70px;
+			margin: 0px;
+			transform: skew(-30deg);
+}
+		
+h2{
+			background-color: pink;
+			border: 1px solid black;
+			padding: 10px;
+			width: 250px;
+			border-radius: 10px 20px 10px 20px
+}
+
+div.a {
+	color:red;
+	transform: rotateX(180deg);
+	width: 128px;
+}
+
+#a:link {
+			}
+			#a:active {
+			background-color: yellow;
+			color: red;
+			}
+			
+#b:link {
+			}
+			#b:active {
+			background-color: yellow;
+			color: red;
+			}
+			
+#c:link {
+			}
+			#c:active {
+			background-color: yellow;
+			color: red;
+			}
+			
+#d:link {
+			}
+			#d:active {
+			background-color: yellow;
+			color: red;
+			}
+			
+#e:link {
+			}
+			#e:active {
+			background-color: yellow;
+			color: red;
+			}
