@@ -1,0 +1,28 @@
+a, div {            
+		}    
+	a:link {          
+		background-color: blue;
+		color: white;
+		}       
+	a:visited { 
+		background-color: pink;  
+		}        
+	a:hover {   
+		background-color: red;
+		}  
+	a:active {     
+        background-color: yellow;         
+		}      
+#firstDiv:target{   
+		width: 100px;
+		height: 100px;
+		background-color: purple;          
+		color: violet;
+		}       
+#secondDiv:target{    
+		width:100px;
+		height:100px;
+		border: 10px dotted green;
+		background-color: lime;
+		color: green;
+        }    
