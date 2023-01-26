@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>K9 Minions</title>
+	<meta charset="UTF-8">
+ 	<meta name="author" content="My Name">
+ 	<meta name="keywords" content="HTML, CSS, JavaScript">
+ 	<meta name="revised" content="05-09-2022">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "300px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+// Next/previous controls
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+// Thumbnail image controls
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<span onclick="openNav()"><img src="images/lines.png" width="50px" height="45px" id="nav"></span>
+		<span id="web"><a href="index.html"><img class="logo" src="images/logo.png" alt="logo" height="75px" width="300px"></a></span>
+	</header>
+	<nav id="mySidenav" class="sidenav">
+		<h2>Navigation</h2>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html"><img src="images/img1.png" height="50px"></a>
+		<a href="htdocs/Da boyz.html"><img src="images/img2.png" height="50px"></a>
+		<a href="htdocs/The gurlz.html"><img src="images/img3.png" height="50px"></a>
+		<a href="htdocs/K9 Minions.html"><img src="images/img4.png" height="50px"></a>
+		<a href="htdocs/Other.html"><img src="images/img5.png" height="50px"></a>
+	</nav>
+	<div id="content">
+		<div id="title">
+			<a href="htdocs/K9 Minions.html"><img src="images/title.png" alt="K9 Minions" width="609px" height="245px"></a>
+		</div>
+		<div>
+			<a href="htdocs/K9 Minions.html">
+				<img src="images/class photo 2.jfif" height="350px" id="photo">
+			</a>
+		</div>
+			<div id="desc">
+				<p>WELCOME TO BATCH 2026 GRADE 9 - POTASSIUM WEBSITE (More pics and vids to be uploaded when available in the future!!)</p>
+			</div>
+			<div id="choices"> 
+				<span>
+					<a href="htdocs/Da boyz.html"><img src="images/Da Boyz.png" id="boyz" width="250px" height="250px"></a>
+				</span>
+				<span>
+					<a href="htdocs/The gurlz.html"><img src="images/The Gurlz.png" id="gurlz" width="250px" height="250px"></a>
+				</span>
+			</div>
+		<footer>
+			<p> &copy; 2023 Hillary Balingbing All rights reserved. </p>
+		</footer>
+	</div>
+</body>
+</html>
+

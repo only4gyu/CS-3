@@ -1,0 +1,182 @@
+body {
+	margin:0;
+	background-color: #FFF0AC;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+} 
+
+.logo {
+	float: left;
+	margin-right: 25px;
+}
+
+#nav {
+	clear: both;
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+	padding-right: 20px;
+}
+
+header {
+	background-color:#004AAD;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	font-size: 25;
+	color: #FFDC3B;
+}
+
+#desc p {
+	margin-left: 260px;
+	margin-right: 260px;
+	margin-top: 50px;
+	font-size: 33px;
+	color: #004AAD;
+	text-align: center;
+	background-color: #E6E6E6;
+	padding: 20px;
+	Border-radius: 10px;
+}
+
+footer {
+	text-align:center;
+	color: #FFDC3B;
+	background-color: #004AAD;
+	position: abosolute;
+	bottom: 0;
+	padding: 10px;
+	margin-top: 70px;
+}
+
+#content {
+	padding-top: 100px;
+	text-align: center;
+}
+
+#photo {
+	border-radius: 30px;
+	transition: transform 0.5s;
+	transition-timing-function: ease;
+}
+
+#photo:hover {
+	transform: scale(1.05);
+	filter: drop-shadow(0px 0px 10px #FBFFAD);
+	cursor: pointer;
+}
+
+#choices{
+	padding-top: 50px;
+	text-align: center;
+}
+
+#boyz{
+	border-radius: 30px;
+	transition: transform 0.5s;
+	transition-timing-function: ease;
+}
+
+#boyz:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#gurlz{
+	border-radius: 30px;
+	transition: transform 0.5s;
+	transition-timing-function: ease;
+}
+
+#gurlz:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#dot{
+	opacity: 0;
+}
+
+#title {
+	font-size: 40;
+	color: #FFE487;
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 30px;
+	transition: transform 0.5s;
+	transition-timing-function: ease;
+}
+
+#title:hover {
+	transform: scale(1.05);
+	filter: drop-shadow(0px 0px 35px #FBFFAD);
+	cursor: pointer;
+}
+
+#nav:hover {
+	cursor: pointer;
+}
+
+#title {
+	font-size: 40;
+	color: #FFE487;
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 30px;
+}
+
+nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	background-color: #004AAD;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+nav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #FFDC3B;
+	display: block;
+	transition: 0.3s;
+}
+
+a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	transition: 0.3s;
+}
+
+nav h2 {
+	padding-right: 30px;
+	margin-top: 0px;
+	text-decoration: none;
+	font-size: 35px;
+	color: #FFDC3B;
+	display: block;
+}
+
+nav a:hover {
+	color: #FFEA89;
+	transform: scale(1.1);
+}
+
+nav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
