@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html>  
+	<head>
+	</head> 
+	<body> 
+		<div id="1">
+		</div>
+		<div id="2"> 
+		</div>
+		<script> 
+		var random; 
+		var x = prompt ('Enter the length of the Hypotenuse');
+		var y = prompt ('Enter the length of the Opposite'); 
+		var z = prompt ('Enter the length of the Adjacent'); 
+		document.getElementById("1").innerHTML = "Triangle sides length:" + x + y + z; 
+		function determineTriangle() { 
+			if (x === y && y === z && x == y) {
+			document.getElementById("2").innerHTML = "The triangle is EQUILATERAL.";
+			} 
+			else {
+			document.getElementById("2").innerHTML = "The triangle is ISOCELES.";
+      } 
+			if (x !== y && y !== z && x != z) {
+			document.getElementById("2").innerHTML = "The triangle is SCALENE.";
+      }
+   }
+		</script>   
+	</body>
+</html>	
