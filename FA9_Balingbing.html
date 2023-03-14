@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div id="p1"></div>
+	<div id="p2"></div>
+	<script>
+    var r;
+    var x;
+    var y;
+    var z;
+r = Math.floor(Math.random() * 1000);
+    document.getElementById("p1").innerHTML = "Randomly generated number: " + r;
+	
+	x = (Math.floor(r%100/10)*10);
+	y = (Math.floor(r/100)*100);
+	z = r%(x + y);
+	document.getElementById("p2").innerHTML = "Breakdown: " + x + ", "+ y + ", "+ z;
+	</script>
+</body>
+</html>
