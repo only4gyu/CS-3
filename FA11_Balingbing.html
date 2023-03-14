@@ -12,18 +12,19 @@
 		var x = prompt ('Enter the length of the Hypotenuse');
 		var y = prompt ('Enter the length of the Opposite'); 
 		var z = prompt ('Enter the length of the Adjacent'); 
-		document.getElementById("1").innerHTML = "Triangle sides length:" + x + y + z; 
+		document.getElementById("1").innerHTML = "Triangle sides length:" + x + ", " + y + ", " + z; 
 		function determineTriangle() { 
-			if (x === y && y === z && x == y) {
-			document.getElementById("2").innerHTML = "The triangle is EQUILATERAL.";
+			if (x == y && y == z && x == y) {
+			window.alert("The triangle is EQUILATERAL.");
 			} 
+			else if (x != y && y != z && x != z) {
+			 window.alert("The triangle is SCALENE.");
+      			}
 			else {
-			document.getElementById("2").innerHTML = "The triangle is ISOCELES.";
-      } 
-			if (x !== y && y !== z && x != z) {
-			document.getElementById("2").innerHTML = "The triangle is SCALENE.";
-      }
-   }
+			window.alert("The triangle is ISOCELES.");
+      			} 
+   		}
+		determineTriangle();
 		</script>   
 	</body>
 </html>	
