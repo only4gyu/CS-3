@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Online Shop</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="author" content="Hera Poala Paez">
+		<style>
+			span {color: blue; text-decoration:underline}
+			button {width: 100px; padding: 5px; background: pink;}
+		</style>
+	</head>
+	<body>
+		<h1> Miss Ko Na Siya </h1>
+		<h2> Please pick one of the following </h2>
+		<ol>
+			<li> Puso Niya (not guaranteed na buhay pa siya) price: 2000000.00 </li>
+			<li> Future na Kasama Siya (not guaranteed na mahal ka niya) price: 1000000.00 </li>
+			<li> Pagmamahal Niya (not guaranteed na romantic) price: 3000000.00 </li>
+		</ol>
+		<p> Item selected : <span id="item"> </span> </p>
+		<p> Qty bought : <span id="qty"> </span> </p>
+		<p> Amount to pay for the item: <span id="bill"> </span> </p>
+		<p> Current Total Bill: <span id="tbill"> </span> </p>
+		<button onclick="buy()"> Buy an Item </button>
+		<button onclick="clr()"> Clear </button>
+		
+		<script>
+			var num;
+            var name;
+            var price;
+			var q;
+			var amount;
+			var total = 0;
+			
+            //buying of products of the customer from the shop
+			function buy() {
+                //for the item to buy
+				num = parseInt(prompt("Enter the item number of what you want to buy:"));
+				if (num < 1 || num > 3 || !Number.isInteger(num) ){
+					alert("Invalid number, di ka niya na mahal.");
+					return;
+				}
+                //for the quantity of the item
+				q = parseInt(prompt("Enter the quantity of what you're willing to buy:"));
+
+				if (!Number.isInteger(q) || q <= 0){
+					alert("Invalid, enter a positive integer para positive din ang feelings niya para sayo.");
+					return;
+				}
+
+				switch (num) {
+					case 1:
+						name = "Puso Niya";
+						price = 2000000.00;
+						break;
+					case 2:
+						name = "Future na Ksama Siya";
+						price = 1000000.00;
+						break;
+					case 3:
+						name = "Pagmamahal Niya";
+						price = 3000000.00;
+						break;
+				}
+
+				amount = price*q; //amount to pay
+				document.getElementById("item").innerHTML = name; //to show the item neame
+				document.getElementById("qty").innerHTML = q; //to show the quantity
+				document.getElementById("bill").innerHTML = amount.toFixed(2); //to show the the amount to pay
+				document.getElementById("tbill").innerHTML = (total + amount).toFixed(2);  //for the total bill
+				total = parseInt(document.getElementById("tbill").innerHTML); //for the total bill
+			}
+
+            //to clear
+			function clr() {
+				document.getElementById("item").innerHTML = " ";
+            	document.getElementById("qty").innerHTML = " ";
+            	document.getElementById("bill").innerHTML = " ";
+            	document.getElementById("tbill").innerHTML = " ";
+				total = 0.00;
+			}
+
+		</script>
+	</body>
+</html>

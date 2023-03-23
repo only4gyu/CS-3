@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>One Time Password </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<style>
+        		body {
+				background: lightblue; 
+            		text-align: center;
+            		font-family: arial;
+                		color: navy;
+           		 }
+
+           		button {
+				padding: 10px; 
+				background:violet 
+			}
+
+            	a {
+				font-size: 0.5em; 
+				color: maroon
+			}
+        	</style>
+	</head>
+
+	<body onload= "hello()">
+		<h1> Final Verification Step </h1>
+		<h2> Current OTP: <span id="otp"> _ _ _ _ _ _ </span> <a onclick = "hi()"> New OTP </a></h2>
+    		<button onclick = "hi()"> Enter the OTP as shown above </button>
+    
+    		<script>
+
+			// generates OTP
+			function hello() {
+				var r = Math.floor(Math.random() * 1000000);
+  				document.getElementById("otp").innerHTML = r;
+			}
+
+			//checks OTP
+			function hi() {
+  				var otp = prompt("Enter OTP:");
+				var OTP = document.getElementById("otp").innerHTML;
+
+				if (otp === OTP) {
+    					window.open("https://youtu.be/P9tKTxbgdkk");
+  				} 
+				else {
+    					alert("Entered OTP is wrong. Try again when crinushback ka na (jokes, stan niyo na kasi ang Tomorrw x Together).");
+    					hello();
+  				}
+			}
+    		</script>
+	</body>
+</html>
